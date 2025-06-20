@@ -46,11 +46,12 @@ async function handleProductFetch() {
     productData = await data.json();
 
     productData.map((product, i) => {
-      if(window.innerWidth <= 768){
-    res = product.tablet.desktop;
+
+        if(window.innerWidth <= 768){
+    res = product.image.tablet;
   }
   if(window.innerWidth <=425){
-    res = product.mobile.desktop;
+    res = product.image.mobile;
   }
   else{
   res = product.image.desktop;
