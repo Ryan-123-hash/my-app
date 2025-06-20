@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Product list with cart</title>
+ 
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="cartModalContain">
+    <div class="cartModal">
+    <div class="modalHeader">
+      <img src="assets/images/icon-order-confirmed.svg" width="40" height="40" alt="">
+      <h1>Order Confiremed</h1>
+      <p>we hope you enjoy your food</p>
+      <ul class="modalList">
+        <li>
+          <div class="modalImgContain">
+            <img src="assets//images/image-baklava-tablet.jpg" alt="" width="35" height="35">
+            <div>
+              <h4>Name</h4>
+              <span>
+                <p>l</p>
+                <p>l</p>
+              </span>
+            </div>
+          </div>
+          <h3>$20</h3>
+        </li>
+      </ul>
+     <ul class="modalTotalContain">
+      <p>Order total</p>
+      <p>$</p>
+     </ul>
+     <button class="orderBtn" onclick="handleNewOrder()">
+      Start new Order
+     </button>
+    </div>
+  </div>
+  </div>
+
+<div class="productContainer">
+    <h1>Dessert</h1>
+  <div class="productList">
+     
+ 
+
+  </div>
+</div>
+  <div class="productCart">
+   <div class="card-header">
+    <h2 class="cartCount">Your Cart (0)</h2>
+   </div>
+   <div class="cartBody">
+    <img src="assets/images/illustration-empty-cart.svg" class="cartImg" alt="">
+    
+   </div>
+   <ul class="cartListContainer">
+   
+   
+   </ul>
+   <div class="totalContainer">
+    <p>Order total</p>
+    <p class="Total">
+    $0
+    </p>
+   </div>
+   <p class="cartText">your added item will appear here</p>
+   <div class="placeOrderContain">
+    <div class="carbonNeu">
+      <img src="assets/images/icon-carbon-neutral.svg" alt="" width="15" height="15">
+      <p>This is a carbon-neutral delivery</p>
+    </div>
+    <button onclick="handleConfirmBtn()" class="orderBtn">Confirm Order</button>
+   </div>
+  </div>
+</div>
+
+<!--
+ <li class="cartList">
+      <div class="cartListBody">
+         <p class="prodName">Name</p>
+      <span class="cartInfo">
+        <p>1x</p>
+        <p>$@30.00</p>
+        <p>$23</p>
+      </span>
+      </div>
+      <button>
+        <img src="assets/images/icon-remove-item.svg" alt="" >
+      </button>
+    </li>-->
+  <!----Desserts
+
+  Waffle with Berries
+  Waffle
+  6.50
+  Add to Cart
+
+  Vanilla Bean Crème Brûlée
+  Crème Brûlée
+  7.00
+  Add to Cart
+
+  Macaron Mix of Five
+  Macaron
+  8.00
+  Add to Cart
+
+  Classic Tiramisu
+  Tiramisu
+  5.50
+  Add to Cart
+
+  Pistachio Baklava
+  Baklava
+  4.00
+  Add to Cart
+
+  Lemon Meringue Pie
+  Pie
+  5.00
+  Add to Cart
+
+  Red Velvet Cake
+  Cake
+  4.50
+  Add to Cart
+
+  Salted Caramel Brownie
+  Brownie
+  4.50
+  Add to Cart
+
+  Vanilla Panna Cotta
+  Panna Cotta
+  6.50
+  Add to Cart
+
+  
+  Your added items will appear here-->
+
+ <!---->
+ 
+ <script src="index.js"></script> 
+</body>
+</html>
